@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./register.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style >
+      body{
+        background-color: rgb(124, 182, 182);
+      }
+      .btn-danger{
+        margin-left: 70% !important;
+        text-decoration: none;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container d-flex flex-column">
+      <div class="d-flex flex-row mt-3">
+        <h1>Tabel Registrasi</h1>
+      </div>
+      <div class="input-group my-2">
+        <span class="input-group-text">NAMA  :</span>
+        <input type="text" aria-label="NAMAAA" class="form-control" id="nama" placeholder="minimal 10 huruf">
+      </div>
+
+      <div class="input-group my-2">
+        <span class="input-group-text">UMUR  :</span>
+        <input type="text" aria-label="UMURRR" class="form-control" id="umur" placeholder="minimal diatas 25">
+      </div>
+
+      <div class="input-group my-2">
+        <span class="input-group-text">SANGU :</span>
+        <input type="text" aria-label="SANGUUU" class="form-control" id="sangu" placeholder="minimal 100k, maksimal 1M">
+      </div>
+      <div class="my-2">
+        <button class="btn btn-success" id="rgs" onclick="submitData()">Submit</button>
+        <button class="btn btn-danger" id="view" disabled="true"><a href="listpendaftar.html" style="text-decoration: none; color: black;" >View List Pendaftar</a></button>
+      </div>
+      <p id="pesanerr"></p>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>

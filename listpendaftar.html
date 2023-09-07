@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./register.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        td{
+        margin: 30px;
+        border: 1px solid black;
+        text-align: center;
+        }
+        table{
+            display: flex;
+            align-items: center;
+            margin: 30px;
+        }
+        body{
+            background-color: rgb(123, 192, 192);
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <button onclick="viewDataResume()" id="buatbutton" class="btn btn-success m-2" >Lihat Table</button>
+</div>
+<div>
+  <ul id="buat"></ul>
+</div>
+<div>
+    <table class="table table-striped table-success">
+        <tr id="buatnama">
+            <td class="col" style="border: 1px solid black;"
+            >NAMA    :</td>
+        </tr>
+        <tr id="buatresume" >
+            <td style="border: 1px solid black">RESUME  :</td>
+        </tr>
+    </table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
