@@ -79,12 +79,12 @@ class DataHandler {
     const buatumur = document.createElement("td");
     let formattedRataUmur;
 
-
     if (rataumur === Math.floor(rataumur)) {
         formattedRataUmur = 'Rata" Umur : ' + rataumur + ", dan Rata\" sangu  : Rp." + ratasangu.toFixed(2);
     } else {
         formattedRataUmur = 'Rata" Umur : ' + rataumur.toFixed(2) + ", dan Rata\" sangu  : Rp." + ratasangu.toFixed(2);
-    } const umur1 = document.createTextNode(formattedRataUmur);
+    }const umur1 = document.createTextNode(formattedRataUmur);
+
         buatumur.appendChild(umur1);
         document.getElementById("buatresume").appendChild(buatumur);
         buatumur.colSpan = storedDataSangu.length;
